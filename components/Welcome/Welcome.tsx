@@ -1,23 +1,47 @@
-import { Anchor, Text, Title } from '@mantine/core';
-import classes from './Welcome.module.css';
+import classes from './Welcome.module.scss';
+import { Button, Container, Group, Text } from '@mantine/core';
 
 export function Welcome() {
   return (
-    <>
-      <Title className={classes.title} ta="center" mt={100}>
-        Welcome to{' '}
-        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+    <div className={classes.wrapper}>
+      <Container className={classes.inner}>
+        <h1 className={classes.title}>
+          Hey! I'm{'  '}
+          <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+            Griffin Michalak
+          </Text>
+          {', a '}
+          software developer
+        </h1>
+
+        <Text className={classes.description} c="dimmed">
+          I am an honors CS & AI student at Northeastern University. Based in Boston, I have 2+ YOE
+          in software development at Datadog, Verizon, and Liberty Mutual. Take a look at my website
+          to learn more about me!
         </Text>
-      </Title>
-      <Text color="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit index.tsx file.
-      </Text>
-    </>
+
+        <Group className={classes.controls}>
+          <Button
+            size="xl"
+            className={classes.control}
+            variant="gradient"
+            gradient={{ from: 'blue', to: 'cyan' }}
+          >
+            Get started
+          </Button>
+
+          <Button
+            component="a"
+            href="https://github.com/mantinedev/mantine"
+            size="xl"
+            variant="default"
+            className={classes.control}
+            // leftSection={<GithubIcon size={20} />}
+          >
+            GitHub
+          </Button>
+        </Group>
+      </Container>
+    </div>
   );
 }
