@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import classes from './Welcome.module.scss';
 import { Button, Container, Group, Text } from '@mantine/core';
 
