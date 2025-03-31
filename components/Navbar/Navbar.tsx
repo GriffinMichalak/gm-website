@@ -1,11 +1,28 @@
 import Link from 'next/link';
 import classes from './Navbar.module.scss';
-import { IconMoonStars, IconSun } from '@tabler/icons-react';
-import { Box, Group, Switch, Text, useMantineColorScheme, useMantineTheme } from '@mantine/core';
+import { IconBrandGithub, IconBrandLinkedin, IconMoonStars, IconSun } from '@tabler/icons-react';
+import {
+  ActionIcon,
+  Box,
+  Burger,
+  Drawer,
+  Group,
+  Switch,
+  Text,
+  Tooltip,
+  useMantineColorScheme,
+  useMantineTheme,
+} from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 
 export function Navbar() {
   const theme = useMantineTheme();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+
+  const handleLinkClick = () => {
+    closeDrawer();
+  };
 
   return (
     <Box>
@@ -23,6 +40,7 @@ export function Navbar() {
             </Text>
           </Link>
 
+          {/* Desktop Navigation */}
           <Group h="100%" gap={0} visibleFrom="sm">
             <Link href="/" className={classes.link}>
               Home
@@ -35,7 +53,23 @@ export function Navbar() {
             </Link>
           </Group>
 
+          {/* Desktop Links and Social Icons */}
           <Group visibleFrom="sm">
+            <Tooltip label="GitHub" position="bottom" withArrow>
+              <Link href="https://github.com/GriffinMichalak" passHref target="_blank">
+                <ActionIcon variant="default" aria-label="GitHub">
+                  <IconBrandGithub size={16} />
+                </ActionIcon>
+              </Link>
+            </Tooltip>
+            <Tooltip label="LinkedIn" position="bottom" withArrow>
+              <Link href="https://www.linkedin.com/in/griffinmichalak/" passHref target="_blank">
+                <ActionIcon variant="default" aria-label="LinkedIn">
+                  <IconBrandLinkedin size={16} />
+                </ActionIcon>
+              </Link>
+            </Tooltip>
+
             <Switch
               defaultChecked={true}
               size="md"
@@ -47,8 +81,52 @@ export function Navbar() {
               onClick={toggleColorScheme}
             />
           </Group>
+
+          {/* Mobile Menu (Burger) */}
+          <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
+
+      {/* Mobile Drawer */}
+      <Drawer
+        opened={drawerOpened}
+        onClose={closeDrawer}
+        size="100%"
+        padding="md"
+        title="Navigation"
+        hiddenFrom="sm"
+        zIndex={1000000}
+      >
+        <Group>
+          <Link href="/" className={classes.link} onClick={handleLinkClick}>
+            Home
+          </Link>
+          <Link href="/resume" className={classes.link} onClick={handleLinkClick}>
+            Resume
+          </Link>
+          <Link href="/" className={classes.link} onClick={handleLinkClick}>
+            About Me
+          </Link>
+        </Group>
+
+        {/* Social Links in Mobile Menu */}
+        <Group mt="md">
+          <Tooltip label="GitHub" position="bottom" withArrow>
+            <Link href="https://github.com/GriffinMichalak" passHref target="_blank">
+              <ActionIcon variant="default" aria-label="GitHub">
+                <IconBrandGithub size={16} />
+              </ActionIcon>
+            </Link>
+          </Tooltip>
+          <Tooltip label="LinkedIn" position="bottom" withArrow>
+            <Link href="https://www.linkedin.com/in/griffinmichalak/" passHref target="_blank">
+              <ActionIcon variant="default" aria-label="LinkedIn">
+                <IconBrandLinkedin size={16} />
+              </ActionIcon>
+            </Link>
+          </Tooltip>
+        </Group>
+      </Drawer>
     </Box>
   );
 }
