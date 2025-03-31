@@ -1,7 +1,10 @@
 import classes from './Welcome.module.scss';
+import { Typewriter } from 'react-simple-typewriter';
 import { Button, Container, Group, Text } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 
 export function Welcome() {
+  const isMobile = useMediaQuery('(max-width: 414px)');
   return (
     <div className={classes.wrapper}>
       <Container className={classes.inner}>
@@ -11,7 +14,25 @@ export function Welcome() {
             Griffin Michalak
           </Text>
           {', a '}
-          software developer
+          <br />
+          {isMobile ? (
+            'software engineer'
+          ) : (
+            <Typewriter
+              words={[
+                'software engineer',
+                'full-stack developer',
+                'musician',
+                'coffee enthusiast',
+                'saxophone aficionado',
+              ]}
+              loop={0}
+              typeSpeed={100}
+              deleteSpeed={100}
+              delaySpeed={2000}
+              cursor
+            />
+          )}
         </h1>
 
         <Text className={classes.description} c="dimmed">
