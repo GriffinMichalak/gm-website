@@ -1,5 +1,6 @@
 import classes from './ResumePage.module.scss';
 import {
+  Badge,
   Button,
   Card,
   Container,
@@ -7,7 +8,6 @@ import {
   Group,
   Image,
   List,
-  Pill,
   Stack,
   Text,
   Title,
@@ -181,14 +181,21 @@ export default function ResumePage() {
             </List>
             <div style={{ marginTop: '10px' }}>
               {company.skills.map((skill, skillIndex) => (
-                <Pill
-                  key={skillIndex}
-                  variant="default"
-                  color="blue"
+                // <Pill
+                //   key={skillIndex}
+                //   variant="default"
+                //   color="blue"
+                //   style={{ marginRight: '5px', marginTop: '5px' }}
+                // >
+                //   {skill}
+                // </Pill>
+                <Badge
                   style={{ marginRight: '5px', marginTop: '5px' }}
+                  variant="outline"
+                  key={skillIndex}
                 >
                   {skill}
-                </Pill>
+                </Badge>
               ))}
             </div>
           </Card>
