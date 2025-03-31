@@ -11,12 +11,11 @@ import {
   Text,
   Tooltip,
   useMantineColorScheme,
-  useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
 export function Navbar() {
-  const theme = useMantineTheme();
+  // const theme = useMantineTheme();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
@@ -71,7 +70,7 @@ export function Navbar() {
             </Tooltip>
 
             <Switch
-              defaultChecked={true}
+              defaultChecked
               size="md"
               color="dark.4"
               onLabel={<IconSun size={16} stroke={2.5} color="var(--mantine-color-yellow-4)" />}
@@ -125,6 +124,14 @@ export function Navbar() {
               </ActionIcon>
             </Link>
           </Tooltip>
+          <Switch
+            defaultChecked
+            size="md"
+            color="dark.4"
+            onLabel={<IconSun size={16} stroke={2.5} color="var(--mantine-color-yellow-4)" />}
+            offLabel={<IconMoonStars size={16} stroke={2.5} color="var(--mantine-color-blue-6)" />}
+            onClick={toggleColorScheme}
+          />
         </Group>
       </Drawer>
     </Box>
