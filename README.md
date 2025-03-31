@@ -1,7 +1,5 @@
 # My Personal Website
 
-## npm scripts
-
 ### Build and dev scripts
 
 - `dev` – start dev server
