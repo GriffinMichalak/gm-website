@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import classes from './Navbar.module.scss';
-import { IconBrandGithub, IconBrandLinkedin, IconMoonStars, IconSun } from '@tabler/icons-react';
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconMail,
+  IconMoonStars,
+  IconSun,
+} from '@tabler/icons-react';
 import {
   ActionIcon,
   Box,
@@ -68,6 +74,13 @@ export function Navbar() {
                 </ActionIcon>
               </Link>
             </Tooltip>
+            <Tooltip label="Email Me!" position="bottom" withArrow>
+              <Link href="mailto:griffinmichalak@gmail.com" passHref target="_blank">
+                <ActionIcon variant="default" aria-label="Email">
+                  <IconMail size={16} />
+                </ActionIcon>
+              </Link>
+            </Tooltip>
 
             <Switch
               defaultChecked
@@ -121,6 +134,13 @@ export function Navbar() {
             <Link href="https://www.linkedin.com/in/griffinmichalak/" passHref target="_blank">
               <ActionIcon variant="default" aria-label="LinkedIn">
                 <IconBrandLinkedin size={16} />
+              </ActionIcon>
+            </Link>
+          </Tooltip>
+          <Tooltip label="Email Me!" position="bottom" withArrow>
+            <Link href="mailto:griffinmichalak@gmail.com" passHref target="_blank">
+              <ActionIcon variant="default" aria-label="Email">
+                <IconMail size={16} />
               </ActionIcon>
             </Link>
           </Tooltip>
