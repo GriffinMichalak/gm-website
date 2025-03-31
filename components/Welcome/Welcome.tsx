@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import classes from './Welcome.module.scss';
 import { Button, Container, Group, Text } from '@mantine/core';
 
@@ -22,6 +23,8 @@ export function Welcome() {
 
         <Group className={classes.controls}>
           <Button
+            component="a"
+            href="/resume"
             size="xl"
             className={classes.control}
             variant="gradient"
@@ -32,11 +35,10 @@ export function Welcome() {
 
           <Button
             component="a"
-            href="https://github.com/mantinedev/mantine"
+            href="https://github.com/GriffinMichalak"
             size="xl"
             variant="default"
             className={classes.control}
-            // leftSection={<GithubIcon size={20} />}
           >
             About Me
           </Button>
