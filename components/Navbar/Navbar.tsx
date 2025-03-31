@@ -1,37 +1,7 @@
-// components/Navbar.tsx
 import Link from 'next/link';
 import classes from './Navbar.module.scss';
-import {
-  IconBook,
-  IconChartPie3,
-  IconChevronDown,
-  IconCode,
-  IconCoin,
-  IconFingerprint,
-  IconMoonStars,
-  IconNotification,
-  IconSun,
-} from '@tabler/icons-react';
-import {
-  Anchor,
-  Box,
-  Burger,
-  Button,
-  Center,
-  Collapse,
-  Divider,
-  Drawer,
-  Group,
-  HoverCard,
-  ScrollArea,
-  SimpleGrid,
-  Switch,
-  Text,
-  ThemeIcon,
-  UnstyledButton,
-  useMantineColorScheme,
-  useMantineTheme,
-} from '@mantine/core';
+import { IconMoonStars, IconSun } from '@tabler/icons-react';
+import { Box, Group, Switch, Text, useMantineColorScheme, useMantineTheme } from '@mantine/core';
 
 export function Navbar() {
   const theme = useMantineTheme();
@@ -46,7 +16,7 @@ export function Navbar() {
               fw={700}
               size="xl"
               style={{
-                color: colorScheme === 'dark' ? 'white' : 'black', // Change text color based on theme
+                color: colorScheme === 'dark' ? 'white' : 'black',
               }}
             >
               Griffin Michalak
@@ -57,10 +27,10 @@ export function Navbar() {
             <Link href="/" className={classes.link}>
               Home
             </Link>
-            <Link href="/about" className={classes.link}>
+            <Link href="/resume" className={classes.link}>
               Resume
             </Link>
-            <Link href="/about" className={classes.link}>
+            <Link href="/" className={classes.link}>
               About Me
             </Link>
           </Group>

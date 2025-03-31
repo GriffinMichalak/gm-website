@@ -15,9 +15,9 @@ export function Welcome() {
         </h1>
 
         <Text className={classes.description} c="dimmed">
-          I am an honors CS & AI student at Northeastern University. Based in Boston, I have 2+ YOE
-          in software development at Datadog, Verizon, and Liberty Mutual. Take a look at my website
-          to learn more about me!
+          I am an Honors CS & AI student at Northeastern University. Based in Boston, I have 2 years
+          of experience in software development at Datadog, Verizon, and Liberty Mutual. Take a look
+          at my website to learn more about me!
         </Text>
 
         <Group className={classes.controls}>
@@ -27,7 +27,7 @@ export function Welcome() {
             variant="gradient"
             gradient={{ from: 'blue', to: 'cyan' }}
           >
-            Get started
+            Resume
           </Button>
 
           <Button
@@ -38,7 +38,7 @@ export function Welcome() {
             className={classes.control}
             // leftSection={<GithubIcon size={20} />}
           >
-            GitHub
+            About Me
           </Button>
         </Group>
       </Container>
