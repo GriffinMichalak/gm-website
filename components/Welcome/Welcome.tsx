@@ -27,8 +27,8 @@ export function Welcome() {
                 'saxophone aficionado',
               ]}
               loop={0}
-              typeSpeed={100}
-              deleteSpeed={100}
+              typeSpeed={50}
+              deleteSpeed={25}
               delaySpeed={2000}
               cursor
             />

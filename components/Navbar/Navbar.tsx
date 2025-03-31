@@ -53,7 +53,7 @@ export function Navbar() {
             <Link href="/resume" className={classes.link}>
               Resume
             </Link>
-            <Link href="/" className={classes.link}>
+            <Link href="/about" className={classes.link}>
               About Me
             </Link>
           </Group>
@@ -116,7 +116,7 @@ export function Navbar() {
           <Link href="/resume" className={classes.link} onClick={handleLinkClick}>
             Resume
           </Link>
-          <Link href="/" className={classes.link} onClick={handleLinkClick}>
+          <Link href="/about" className={classes.link} onClick={handleLinkClick}>
             About Me
           </Link>
         </Group>
