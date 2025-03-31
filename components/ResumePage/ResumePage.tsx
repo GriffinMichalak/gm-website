@@ -38,7 +38,7 @@ export default function ResumePage() {
       website: 'https://www.libertymutual.com/',
       skills: ['React.js', 'Express.js', 'Node.js', 'TypeScript', 'Git'],
       bullets: [
-        'Implemented many tickets for the Liberty+ Application to assist homeownwers with the maintenance and care of their homes',
+        'Implemented many tickets for the Liberty+ Application to assist homeowners with the maintenance and care of their homes',
         'Led development of About Us and Learn pages for ease of understanding for users',
         'Spearheaded development of LibertyGPT AI plug-in for Earnings Report Summary Generator',
       ],
@@ -174,7 +174,7 @@ export default function ResumePage() {
               </div>
             </Group>
             <Divider my="sm" />
-            <List style={{ paddingRight: '20px' }} withPadding={!isMobile}>
+            <List style={{ paddingRight: isMobile ? '20px' : '50px' }} withPadding={!isMobile}>
               {company.bullets.map((bullet, bulletIndex) => (
                 <List.Item key={bulletIndex}>{bullet}</List.Item>
               ))}
