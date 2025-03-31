@@ -11,7 +11,7 @@ export function Custom404() {
         been moved to another URL.
       </Text>
       <Group justify="center">
-        <Button variant="subtle" size="md">
+        <Button variant="subtle" size="md" component="a" href="/">
           Take me back to home page
         </Button>
       </Group>
