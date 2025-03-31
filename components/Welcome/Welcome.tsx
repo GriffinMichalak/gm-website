@@ -24,11 +24,11 @@ export function Welcome() {
                 'full-stack developer',
                 'musician',
                 'coffee enthusiast',
-                'saxophone aficionado',
+                'saxophone player',
               ]}
               loop={0}
-              typeSpeed={50}
-              deleteSpeed={25}
+              typeSpeed={75}
+              deleteSpeed={35}
               delaySpeed={2000}
               cursor
             />
@@ -55,7 +55,7 @@ export function Welcome() {
 
           <Button
             component="a"
-            href="https://github.com/GriffinMichalak"
+            href="/about"
             size="xl"
             variant="default"
             className={classes.control}
