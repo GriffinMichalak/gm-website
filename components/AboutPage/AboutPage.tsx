@@ -63,7 +63,7 @@ export function AboutPage() {
 
           <Group mt={30}>
             <Button radius="xl" size="md" className={classes.control}>
-              View My Projects
+              {isMobile ? 'Projects' : 'View My Projects'}
             </Button>
             <Button
               variant="default"
@@ -74,7 +74,7 @@ export function AboutPage() {
               component="a"
               target="_blank"
             >
-              Connect With Me
+              {isMobile ? 'Connect' : 'Connect with Me'}
             </Button>
           </Group>
         </div>
