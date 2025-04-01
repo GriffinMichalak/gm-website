@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import classes from './AboutPage.module.scss';
-import { IconCheck } from '@tabler/icons-react';
-import { Button, Container, Group, List, Text, ThemeIcon, Title } from '@mantine/core';
+import { IconBriefcase, IconCheck, IconCode, IconMusic, IconPencil } from '@tabler/icons-react';
+import { Button, Container, Group, Image, List, Text, ThemeIcon, Title } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import northeastern from '../../assets/northeastern.png';
+import pfp from '../../assets/pfp.png';
 
 export function AboutPage() {
   const isMobile = useMediaQuery('(max-width: 414px)');
@@ -16,10 +15,8 @@ export function AboutPage() {
             👋 Hi, I'm <span className={classes.highlight}>Griffin</span>
           </Title>
           <Text c="dimmed" mt="md">
-            I'm a passionate software engineer currently studying at Northeastern University. I love
-            building scalable applications, solving complex problems, and learning new technologies.
-            Whether it's developing intuitive user experiences or working on backend systems, I
-            enjoy tackling challenges and continuously growing as a developer.
+            I'm a software developer currently studying at Northeastern University. I enjoy building
+            robust applications, solving complex problems, and learning new technologies.
           </Text>
 
           <List
@@ -32,17 +29,35 @@ export function AboutPage() {
               </ThemeIcon>
             }
           >
-            <List.Item>
-              <b>Full-Stack Development</b> – Experienced with building responsive web applications
-              using modern frameworks like React, Next.js, and Node.js.
+            <List.Item
+              icon={
+                <ThemeIcon color="blue" size={24} radius="xl">
+                  <IconCode size={16} />
+                </ThemeIcon>
+              }
+            >
+              <b>Full-Stack Development</b> - I've built many apps from the ground up as well as
+              using using modern frameworks like React, Angular, Next.js, and Node.js.
             </List.Item>
-            <List.Item>
-              <b>Backend Engineering</b> – Passionate about building efficient APIs, managing
-              databases, and ensuring seamless server-side performance.
-            </List.Item>
-            <List.Item>
-              <b>Continuous Learner</b> – Always eager to explore new technologies and improve my
+            <List.Item
+              icon={
+                <ThemeIcon color="blue" size={24} radius="xl">
+                  <IconPencil size={16} />
+                </ThemeIcon>
+              }
+            >
+              <b>Continuous Learner</b> - Always eager to explore new technologies and improve my
               coding skills.
+            </List.Item>
+            <List.Item
+              icon={
+                <ThemeIcon color="blue" size={24} radius="xl">
+                  <IconMusic size={16} />
+                </ThemeIcon>
+              }
+            >
+              <b>Musician</b> - I've been playing the saxophone for over 10 years. I specialize in
+              both classical and jazz studies. I also play piano and arrange music.
             </List.Item>
           </List>
 
@@ -50,17 +65,26 @@ export function AboutPage() {
             <Button radius="xl" size="md" className={classes.control}>
               View My Projects
             </Button>
-            <Button variant="default" radius="xl" size="md" className={classes.control}>
+            <Button
+              variant="default"
+              radius="xl"
+              size="md"
+              className={classes.control}
+              href="https://www.linkedin.com/in/griffinmichalak/"
+              component="a"
+              target="_blank"
+            >
               Connect With Me
             </Button>
           </Group>
         </div>
         <Image
-          src={northeastern.src}
+          src={pfp.src}
           className={classes.image}
           alt="Northeastern University"
           width={300}
           height={300}
+          radius="md"
         />
       </div>
     </Container>
