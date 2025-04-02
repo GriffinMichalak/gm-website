@@ -123,6 +123,7 @@ export function AboutPage() {
         align="start"
         slidesToScroll={isMobile ? 1 : 2}
         loop
+        mb={100}
       >
         {slides}
       </Carousel>
