@@ -6,6 +6,10 @@ import { musicMedia } from './media';
 
 export function MusicPage() {
   const [category, setCategory] = useState('all');
+  const visibleMedia =
+    category === 'all'
+      ? musicMedia
+      : musicMedia.filter((item) => item.category.toLowerCase() === category);
 
   return (
     <Container size="md" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
@@ -36,7 +40,7 @@ export function MusicPage() {
             />
           </Group>
           <Grid>
-            {musicMedia.map((item, index) => (
+            {visibleMedia.map((item, index) => (
               <Grid.Col span={{ base: 12, md: 6, lg: 4 }} key={index}>
                 <BadgeCard
                   image={item.image}
