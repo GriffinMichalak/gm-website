@@ -7,9 +7,10 @@ export interface BadgeCardProps {
   description: string;
   country: string;
   link: string;
+  date: string;
 }
 
-export function BadgeCard({ image, title, description, country, link }: BadgeCardProps) {
+export function BadgeCard({ image, title, country, link, date }: BadgeCardProps) {
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section>
@@ -26,7 +27,7 @@ export function BadgeCard({ image, title, description, country, link }: BadgeCar
           </Badge>
         </Group>
         <Text fz="sm" mt="xs">
-          {description}
+          {date}
         </Text>
       </Card.Section>
 
