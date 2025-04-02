@@ -5,12 +5,12 @@ export interface BadgeCardProps {
   image: string;
   title: string;
   description: string;
-  country: string;
+  category: string;
   link: string;
   date: string;
 }
 
-export function BadgeCard({ image, title, country, link, date }: BadgeCardProps) {
+export function BadgeCard({ image, title, category, link, date }: BadgeCardProps) {
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section>
@@ -23,7 +23,7 @@ export function BadgeCard({ image, title, country, link, date }: BadgeCardProps)
             {title}
           </Text>
           <Badge size="sm" variant="light">
-            {country}
+            {category}
           </Badge>
         </Group>
         <Text fz="sm" mt="xs">
