@@ -53,6 +53,9 @@ export function MusicPage() {
               </Grid.Col>
             ))}
           </Grid>
+          <Group justify="center" mt="lg" mb="md">
+            <Text>🎶</Text>
+          </Group>
         </div>
       </div>
     </Container>
