@@ -42,7 +42,7 @@ export function MusicPage() {
                   image={item.image}
                   title={item.title}
                   description={item.description}
-                  country={item.country}
+                  category={item.category}
                   link={item.link}
                   date={item.date}
                 />
