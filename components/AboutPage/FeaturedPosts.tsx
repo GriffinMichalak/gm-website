@@ -12,6 +12,15 @@ export const featuredPosts = [
   },
   {
     id: 2,
+    author: 'Cathleen Finn',
+    date: 'April 2024',
+    content: `<p> Congresswoman Ayanna Pressley packed the house at Verizon's Boston Hub for the Greater Boston Chamber of Commerce Women's Network event. Many thanks to [...] <a href="https://www.linkedin.com/in/nileena-john/" rel="noopener noreferrer" target="_blank">Nileena John</a> and <a href="https://www.linkedin.com/in/griffinmichalak/" rel="noopener noreferrer" target="_blank">Griffin Michalak</a> and partners Chelsea Falkenstein and Dragica Zoric for supporting this event.</p>`,
+    image:
+      'https://media.licdn.com/dms/image/v2/D4E03AQE1OgEEK0rUkA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729174494360?e=1749081600&v=beta&t=wrPrZusC_AIgr0H4rWvW6VilTAfGFsrqUKEXQpAOf-A',
+    link: 'https://www.linkedin.com/posts/cathleenfinn_iamvz-womenshistorymonth-bosbizwomen-activity-7178735993011769344-3avb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLPCWAB9fOopcmF-rZxQykCNXuv5GPeFO4',
+  },
+  {
+    id: 3,
     author: 'Adriana Dawson',
     date: 'April 2024',
     content:
@@ -19,14 +28,5 @@ export const featuredPosts = [
     image:
       'https://media.licdn.com/dms/image/v2/C4E03AQGS65gvnVo0Eg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1632655330399?e=1749081600&v=beta&t=j0mXwFGObIUWGid-TTPAYfoMVlF8gSomZ5KXUuzJM1c',
     link: 'https://www.linkedin.com/posts/adrianadawson_verizon-northeasternuniversity-engagement-activity-7173004231631589376--if9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLPCWAB9fOopcmF-rZxQykCNXuv5GPeFO4',
-  },
-  {
-    id: 3,
-    author: 'Cathleen Finn',
-    date: 'April 2024',
-    content: `<p> Congresswoman Ayanna Pressley packed the house at Verizon's Boston Hub for the Greater Boston Chamber of Commerce Women's Network event. Many thanks to [...] <a href="https://www.linkedin.com/in/nileena-john/" rel="noopener noreferrer" target="_blank">Nileena John</a> and <a href="https://www.linkedin.com/in/griffinmichalak/" rel="noopener noreferrer" target="_blank">Griffin Michalak</a> and partners Chelsea Falkenstein and Dragica Zoric for supporting this event.</p>`,
-    image:
-      'https://media.licdn.com/dms/image/v2/D4E03AQE1OgEEK0rUkA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729174494360?e=1749081600&v=beta&t=wrPrZusC_AIgr0H4rWvW6VilTAfGFsrqUKEXQpAOf-A',
-    link: 'https://www.linkedin.com/posts/cathleenfinn_iamvz-womenshistorymonth-bosbizwomen-activity-7178735993011769344-3avb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLPCWAB9fOopcmF-rZxQykCNXuv5GPeFO4',
   },
 ];
