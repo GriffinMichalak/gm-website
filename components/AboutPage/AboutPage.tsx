@@ -1,11 +1,22 @@
 import classes from './AboutPage.module.scss';
 import { IconBriefcase, IconCheck, IconCode, IconMusic, IconPencil } from '@tabler/icons-react';
-import { Button, Container, Group, Image, List, Text, ThemeIcon, Title } from '@mantine/core';
+import {
+  Button,
+  Container,
+  Group,
+  Image,
+  List,
+  Text,
+  ThemeIcon,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import pfp from '../../assets/pfp.png';
 
 export function AboutPage() {
-  const isMobile = useMediaQuery('(max-width: 414px)');
+  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
   return (
     <Container size="md">

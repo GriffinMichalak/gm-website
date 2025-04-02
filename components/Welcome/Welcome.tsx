@@ -1,10 +1,12 @@
 import classes from './Welcome.module.scss';
 import { Typewriter } from 'react-simple-typewriter';
-import { Button, Container, Group, Text } from '@mantine/core';
+import { Button, Container, Group, Text, useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 
 export function Welcome() {
-  const isMobile = useMediaQuery('(max-width: 414px)');
+  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+
   return (
     <div className={classes.wrapper}>
       <Container className={classes.inner}>

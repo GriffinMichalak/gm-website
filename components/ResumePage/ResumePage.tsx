@@ -12,6 +12,7 @@ import {
   Stack,
   Text,
   Title,
+  useMantineTheme,
 } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import datadog from '../../assets/datadog.png';
@@ -21,6 +22,9 @@ import northeastern from '../../assets/northeastern.png';
 import verizon from '../../assets/verizon.png';
 
 export default function ResumePage() {
+  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+
   const companies = [
     {
       name: 'Datadog',
@@ -82,8 +86,6 @@ export default function ResumePage() {
       website: 'https://www.northeastern.edu/',
     },
   ];
-
-  const isMobile = useMediaQuery('(max-width: 414px)');
 
   return (
     <Container size="md" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
