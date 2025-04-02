@@ -8,6 +8,7 @@ import {
   Group,
   Image,
   List,
+  Spoiler,
   Stack,
   Text,
   Title,
@@ -174,21 +175,15 @@ export default function ResumePage() {
               </div>
             </Group>
             <Divider my="sm" />
-            <List style={{ paddingRight: isMobile ? '20px' : '50px' }} withPadding={!isMobile}>
-              {company.bullets.map((bullet, bulletIndex) => (
-                <List.Item key={bulletIndex}>{bullet}</List.Item>
-              ))}
-            </List>
+            <Spoiler maxHeight={0} showLabel="Show more" hideLabel="Show less">
+              <List style={{ paddingRight: isMobile ? '20px' : '50px' }} withPadding={!isMobile}>
+                {company.bullets.map((bullet, bulletIndex) => (
+                  <List.Item key={bulletIndex}>{bullet}</List.Item>
+                ))}
+              </List>
+            </Spoiler>
             <div style={{ marginTop: '10px' }}>
               {company.skills.map((skill, skillIndex) => (
-                // <Pill
-                //   key={skillIndex}
-                //   variant="default"
-                //   color="blue"
-                //   style={{ marginRight: '5px', marginTop: '5px' }}
-                // >
-                //   {skill}
-                // </Pill>
                 <Badge
                   style={{ marginRight: '5px', marginTop: '5px' }}
                   variant="outline"
