@@ -44,6 +44,7 @@ export function MusicPage() {
                   description={item.description}
                   country={item.country}
                   link={item.link}
+                  date={item.date}
                 />
               </Grid.Col>
             ))}
