@@ -56,9 +56,9 @@ export function Navbar() {
             <Link href="/resume" className={classes.link}>
               Resume
             </Link>
-            <Link href="/music" className={classes.link}>
+            {/* <Link href="/music" className={classes.link}>
               Music
-            </Link>
+            </Link> */}
           </Group>
 
           {/* Desktop Links and Social Icons */}
@@ -122,9 +122,9 @@ export function Navbar() {
           <Link href="/resume" className={classes.link} onClick={handleLinkClick}>
             Resume
           </Link>
-          <Link href="/music" className={classes.link} onClick={handleLinkClick}>
+          {/* <Link href="/music" className={classes.link} onClick={handleLinkClick}>
             Music
-          </Link>
+          </Link> */}
         </Group>
 
         {/* Social Links in Mobile Menu */}
