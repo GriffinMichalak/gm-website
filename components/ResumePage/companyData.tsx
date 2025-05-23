@@ -10,7 +10,7 @@ export const companies = [
     role: 'Software Engineer Intern',
     duration: 'June 2025 - Aug 2025',
     website: 'https://www.datadoghq.com/',
-    skills: ['JavaScript', 'React', 'Node.js', 'AWS'],
+    skills: ['Go', 'React', 'Python', 'Kubernetes', 'PostgreSQL', 'Apache Kafka'],
     bullets: ['Coming Soon 🦮'],
   },
   {
@@ -21,9 +21,9 @@ export const companies = [
     website: 'https://www.libertymutual.com/',
     skills: ['React.js', 'Express.js', 'Node.js', 'TypeScript', 'Git'],
     bullets: [
-      'Implemented many tickets for the Liberty+ Application to assist homeowners with the maintenance and care of their homes',
-      'Led development of About Us and Learn pages for ease of understanding for users',
-      'Spearheaded development of LibertyGPT AI plug-in for Earnings Report Summary Generator',
+      'Participated in an agile development environment with 20 weekly sprint planning sessions and collaborated with over 30 team members across engineering, product, and design team',
+      'Independently led the development of 5 Liberty Mutual Guide pages, which were a critical and large-scale new feature that provided 25,000+ users with personalized how-to guides on home maintenance projects, resulting in a 35% increase in user engagement',
+      'Led cross-functional team of 5 to spearhead development on AI plug-in for Earnings Report Summary Generator, reducing report generation time by 75% and processing an average of 120 financial reports weekly',
     ],
   },
   {
