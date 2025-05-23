@@ -14,12 +14,12 @@ export const companies = [
     bullets: ['Coming Soon 🦮'],
   },
   {
-    name: 'Liberty Mutual',
+    name: 'Liberty Mutual Insurance (Solaria Labs)',
     logo: liberty.src,
     role: 'Software Developer Co-Op',
     duration: 'January 2025 - June 2025',
     website: 'https://www.libertymutual.com/',
-    skills: ['React.js', 'Express.js', 'Node.js', 'TypeScript', 'Git'],
+    skills: ['React', 'Node.js', 'TypeScript', 'GraphQL', 'Datadog'],
     bullets: [
       'Participated in an agile development environment with 20 weekly sprint planning sessions and collaborated with over 30 team members across engineering, product, and design team',
       'Independently led the development of 5 Liberty Mutual Guide pages, which were a critical and large-scale new feature that provided 25,000+ users with personalized how-to guides on home maintenance projects, resulting in a 35% increase in user engagement',
