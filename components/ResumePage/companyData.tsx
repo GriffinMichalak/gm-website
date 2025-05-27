@@ -24,6 +24,7 @@ export const companies = [
       'Participated in an agile development environment with 20 weekly sprint planning sessions and collaborated with over 30 team members across engineering, product, and design team',
       'Independently led the development of 5 Liberty Mutual Guide pages, which were a critical and large-scale new feature that provided 25,000+ users with personalized how-to guides on home maintenance projects, resulting in a 35% increase in user engagement',
       'Led cross-functional team of 5 to spearhead development on AI plug-in for Earnings Report Summary Generator, reducing report generation time by 75% and processing an average of 120 financial reports weekly',
+      'Selected as panelist to mentor incoming interns, sharing technical expertise and career guidance to support next-generation talent development',
     ],
   },
   {
@@ -52,6 +53,7 @@ export const companies = [
       'Automated data base operations, increasing operational efficiency by 20% through 200+ CRUD operations, 20 triggers, and 10 procedures',
       'Streamlined analysis for 1000+ Superbowl 58 network KPIs against industry rivals by implementing a data extraction and Python visualization script, reducing computation time by 50%',
       'Conducted code reviews, browser tests and frequent pairing sessions to ensure code quality',
+      'Selected as panelist to mentor incoming interns, sharing technical expertise and career guidance to support next-generation talent development',
     ],
   },
 ];
