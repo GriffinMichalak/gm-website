@@ -14,7 +14,7 @@ export const companies = [
     bullets: ['Coming Soon 🦮'],
   },
   {
-    name: 'Liberty Mutual Insurance (Solaria Labs)',
+    name: 'Liberty Mutual (Solaria Labs)',
     logo: liberty.src,
     role: 'Software Developer Co-Op',
     duration: 'January 2025 - June 2025',
