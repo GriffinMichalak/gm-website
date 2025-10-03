@@ -4,6 +4,15 @@ import liberty from '../../assets/liberty.png';
 import verizon from '../../assets/verizon.png';
 
 export const companies = [
+    {
+    name: 'Datadog',
+    logo: datadog.src,
+    role: 'Software Engineer',
+    duration: 'July 2026 - Present',
+    website: 'https://www.datadoghq.com/',
+    skills: ['Go', 'React', 'Python', 'Kubernetes', 'PostgreSQL', 'Apache Kafka'],
+    bullets: ['Coming Soon 🦮'],
+  },
   {
     name: 'Datadog',
     logo: datadog.src,
